@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">农普助手</string>
+    <string name="ani_time">250</string>
+    <string name="ani_time2">500</string>
+    <string name="ani_timestartof">150</string>
+    <string name="dialog_update_title">更新</string>
+    <string name="dialog_update_msg">发现新版本，版本号：</string>
+    <string name="dialog_update_msg2">\n是否立即更新?</string>
+    <string name="dialog_update_btnupdate">更新</string>
+    <string name="dialog_update_btnnext">下次再说</string>
+    <string name="dialog_downloading_msg">正在下载更新。。。</string>
+    <string name="dialog_alert_title">警告</string>
+    <string name="dialog_downfailed_btndown">重新下载</string>
+    <string name="dialog_downfailed_btnnext">以后再说</string>
+    <string name="dialog_error_title">错误</string>
+    <string name="dialog_downfailed_msg">下载更新失败，是否重试？</string>
+    <string name="helpinfo"></string>
+    <!-- 提示信息 -->
+    <string name="about_name">关于</string>
+    <string name="versioninfo"></string>
+    <string name="about_ok">确定</string>
+    <string name="about_introduce_title">小工具大用途</string>
+    <string name="about_introduce"></string>
+    <string name="about_links_title">开发者留言</string>
+    <string name="about_links"></string>
+    <string name="filelisttext"></string>
+    <string name="search_hint">输入关键词</string>
+    <string name="description_top_back">返回</string>
+    <string name="description_search">搜索文档</string>
+    <string name="description_refresh">重建索引</string>
+    <string name="description_settings">设置</string>
+
+</resources>

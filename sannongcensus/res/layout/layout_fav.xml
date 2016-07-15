@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/blue"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:src="@drawable/title_back_selector" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff" 
+            />
+
+        <ImageButton
+            android:id="@+id/item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/del_btn_nor"
+             />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/item_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="2.0px"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="#ffffffff"
+        android:dividerHeight="1.1px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:focusable="true" />
+
+</LinearLayout>

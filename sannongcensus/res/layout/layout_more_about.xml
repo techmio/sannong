@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_homebg" >
+
+    <RelativeLayout
+        android:id="@+id/rltoast"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#22ffffff" >
+
+        <TextView
+            android:id="@+id/toptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="关于&amp;声明"
+            android:textColor="#494949"
+            android:textSize="20dip" />
+
+        <ImageButton
+            android:id="@+id/topleftimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/b_back" />
+    </RelativeLayout>
+      
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dip"
+        android:layout_margin="30dip"
+        android:layout_weight="1"
+        android:background="#333"
+        android:padding="15dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip" >
+
+            <!-- 简介 -->
+
+            <TextView
+              style="@style/normalText.Big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_introduce_title"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/about_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="45dip"
+                android:text="@string/about_introduce"
+                android:textColor="#fff"
+                android:textSize="20dip" />
+
+            <!-- 开发者 -->
+
+            <TextView
+                style="@style/normalText.Big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_links_title"
+                android:textColor="#f0f" />
+
+            <TextView
+                android:id="@+id/about_links"
+                style="@style/normalText.Big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="45dip"
+                android:text="@string/about_links"
+                android:textColor="#f66" />
+
+            <TextView
+                android:id="@+id/about_author"
+                style="@style/normalText.Big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="about_author"
+                android:textColor="#f0f" />
+        </LinearLayout>
+    </ScrollView>
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dip"
+        android:background="#333"
+        android:padding="15dip"
+        android:text="@string/helpinfo"
+        android:textColor="#c9c9c9"
+        android:textSize="20sp" />
+    -->
+
+</RelativeLayout>

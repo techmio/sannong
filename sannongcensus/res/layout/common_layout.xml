@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="50dip"
+    android:layout_marginRight="50dip" >
+
+    <ImageView
+        android:id="@+id/toppic"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:adjustViewBounds="true"
+        android:paddingTop="12dip"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/toppic"
+        android:textColor="#ff050505"
+        android:textSize="20.0dip" />
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#00ffffff"
+        android:src="@drawable/delete" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/abstract_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:textColor="#ff6b6b6b"
+        android:textSize="15.0dip" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/abstract_c"
+        android:layout_marginRight="35dip"
+        android:layout_marginTop="10dip"
+        android:textColor="#ff6b6b6b"
+        android:textSize="11.0dip" />
+
+</RelativeLayout>

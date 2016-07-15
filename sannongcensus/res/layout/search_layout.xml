@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+     >
+   <!-- 顶部条 -->
+
+    <RelativeLayout
+        android:id="@+id/searchLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blue"
+        android:gravity="center_vertical" >
+
+        <!-- 返回按钮 -->
+
+        <ImageButton
+            android:id="@+id/top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:contentDescription="@string/description_top_back"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+             android:src="@drawable/title_back_selector"
+            />
+
+         <!-- 搜索按钮 -->
+
+        <ImageButton
+            android:id="@+id/search_fulltext"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:contentDescription="@string/description_search"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:src="@drawable/search_icon_pressed" />
+
+        <!-- 搜索框 -->
+
+        <EditText
+            android:id="@+id/phrase_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_toLeftOf="@id/search_fulltext"
+            android:layout_toRightOf="@+id/top_back"
+            android:background="@drawable/textfield_search_empty"
+            android:hint="@string/search_hint"
+            android:singleLine="true" />
+    </RelativeLayout>
+    
+    
+       <ListView
+        android:id="@+id/item_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0.0px"
+        android:cacheColorHint="#00000000"
+        android:divider="#ffffffff"
+        android:dividerHeight="0.0px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:focusable="true" />
+    
+  
+</LinearLayout>

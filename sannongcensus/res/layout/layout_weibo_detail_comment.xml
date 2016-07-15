@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_homebg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/r_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="5dip" >
+
+        <ImageButton
+            android:id="@+id/detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/b_back" />
+
+        <TextView
+            android:id="@+id/today_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/detail_back"
+            android:text="评论微博"
+            android:textColor="#494949"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/detail_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/more_userset_register"
+            android:text="发送" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r_top" >
+
+        <EditText
+            android:id="@+id/c_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/detail_linearlayout_bottom"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="请输入评论内容"
+            android:textColor="#000"
+            android:textSize="24dip" />
+
+        <TextView
+            android:id="@+id/c_textcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/detail_linearlayout_bottom"
+            android:layout_alignParentRight="true"
+            android:padding="20dip"
+            android:text="字数统计：0/140" />
+
+        <LinearLayout
+            android:id="@+id/detail_linearlayout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#99ffffff"
+            android:orientation="horizontal"
+            android:paddingTop="3dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/c_checkbx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="同时转发该微博"
+                    android:textColor="#696969" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <ImageButton
+                    android:id="@+id/c_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:layout_toLeftOf="@+id/c_at"
+                    android:background="@drawable/o_topic" />
+
+                <ImageButton
+                    android:id="@+id/c_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:layout_toLeftOf="@+id/c_face"
+                    android:background="@drawable/o_at" />
+
+                <ImageButton
+                    android:id="@+id/c_face"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/o_emotion" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

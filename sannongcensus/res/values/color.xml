@@ -1,0 +1,11 @@
+
+    <resources>
+        <color name="blue">#0EA6EE</color>
+        <color name="red">#DE8677</color>
+        <color name="trans">#00000000</color>
+        <color name="white">#FFF</color>
+        <color name="yellow">#A60EEE</color>
+        <color name="green">#77EE77</color>
+        <color name="body_background">#FFF</color>
+        
+    </resources>

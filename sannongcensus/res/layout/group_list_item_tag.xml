@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#555555"
+    android:paddingBottom="4dip"
+    android:paddingLeft="12dip"
+    android:paddingRight="12dip" >
+
+    <TextView
+        android:id="@+id/group_list_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="22dip"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

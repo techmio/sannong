@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="50dip"
+    android:layout_marginRight="50dip"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/toppic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter" />
+
+    <TextView
+         android:id="@+id/title"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+          android:layout_marginTop="20dip"
+         android:layout_alignParentBottom="true"
+         android:textColor="#ff8c00"
+         android:gravity="center"
+         android:textSize="22.0dip" />
+
+    <TextView
+        android:id="@+id/abstract_c"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dip"
+        android:layout_marginRight="35dip"
+        android:textColor="#ff6b6b6b"
+        android:textSize="15.0dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="35dip"
+        android:textColor="#ff6b6b6b"
+        android:textSize="12.0dip" 
+        android:visibility="gone"/>
+
+</RelativeLayout>
